@@ -11,11 +11,13 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router';
 import profile from './components/profile.vue';
 import dashboard from './components/dashboard.vue';
+import users from './components/users.vue';
 Vue.use(VueRouter)
 //route registration
 let routes = [
     { path: '/profile', component: profile },
-    { path: '/dashboard', component: dashboard }
+    { path: '/dashboard', component: dashboard },
+    { path: '/users', component: users }
   ]
 //route registration
 const router = new VueRouter({
